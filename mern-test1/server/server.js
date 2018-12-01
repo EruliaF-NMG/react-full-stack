@@ -5,7 +5,6 @@ import app from './express'
 
 
 //Database Connection URL
-console.log(config.mongoUri);
 mongoose.Promise = global.Promise
 mongoose.connect(config.mongoUri)
 

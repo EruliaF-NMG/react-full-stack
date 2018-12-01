@@ -22,7 +22,7 @@ const signin = (req, res) => {
         }
 
         const token = jwt.sign({
-            _id: user._id
+            _id: user._id,
         }, config.jwtSecret)
 
         res.cookie("t", token, {
@@ -48,16 +48,19 @@ const requireSignin = expressJwt({
     userProperty: 'auth'
   })
 
-const hasAuthorization = (req, res) => {
-
-    const authorized = req.profile && req.auth && req.profile._id == req.auth._id
-    if (!(authorized)) {
+const hasAuthorization = (req, res,next) => {    
+    
+    const authorized = req.profile && req.auth && req.profile._id == req.auth._id;
+    
+    if (authorized==false) {
+        console.log("non");
       return res.status('403').json({
         error: "User is not authorized"
       })
+    }else{       
+        console.log("yes");
+        next();
     }
-    next()
-
 }
 
 export default { signin, signout, requireSignin, hasAuthorization }
