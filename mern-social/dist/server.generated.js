@@ -95,7 +95,7 @@ module.exports =
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst config = {\n    env: \"development\" || 'development',\n    port: process.env.PORT || 3000,\n    jwtSecret: process.env.JWT_SECRET || \"YOUR_secret_key\",\n    mongoUri: process.env.MONGODB_URI || process.env.MONGO_HOST || 'mongodb://' + (process.env.IP || 'localhost') + ':' + (process.env.MONGO_PORT || '27017') + '/mernsocial'\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (config);\n\n//# sourceURL=webpack:///./config/config.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst config = {\n    env: \"development\" || 'development',\n    port: process.env.PORT || 3000,\n    jwtSecret: process.env.JWT_SECRET || \"YOUR_secret_key\",\n    mongoUri: process.env.MONGODB_URI || process.env.MONGO_HOST || 'mongodb://' + (process.env.IP || 'localhost') + ':' + (process.env.MONGO_PORT || '27017') + '/mydb'\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (config);\n\n//# sourceURL=webpack:///./config/config.js?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst config = {\n    env: \"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nSyntaxError: Unexpected token (77:4)\\n\\n\\u001b[0m \\u001b[90m 75 | \\u001b[39m  \\u001b[36mconst\\u001b[39m context \\u001b[33m=\\u001b[39m {}\\u001b[33m;\\u001b[39m\\n \\u001b[90m 76 | \\u001b[39m  \\u001b[36mconst\\u001b[39m markup \\u001b[33m=\\u001b[39m \\u001b[33mReactDOMServer\\u001b[39m\\u001b[33m.\\u001b[39mrenderToString(\\n\\u001b[31m\\u001b[1m>\\u001b[22m\\u001b[39m\\u001b[90m 77 | \\u001b[39m    \\u001b[33m<\\u001b[39m\\u001b[33mStaticRouter\\u001b[39m location\\u001b[33m=\\u001b[39m{req\\u001b[33m.\\u001b[39murl} context\\u001b[33m=\\u001b[39m{context}\\u001b[33m>\\u001b[39m\\n \\u001b[90m    | \\u001b[39m    \\u001b[31m\\u001b[1m^\\u001b[22m\\u001b[39m\\n \\u001b[90m 78 | \\u001b[39m      \\u001b[33m<\\u001b[39m\\u001b[33mJssProvider\\u001b[39m\\n \\u001b[90m 79 | \\u001b[39m        registry\\u001b[33m=\\u001b[39m{sheetsRegistry}\\n \\u001b[90m 80 | \\u001b[39m        generateClassName\\u001b[33m=\\u001b[39m{generateClassName}\\u001b[0m\\n\");\n\n//# sourceURL=webpack:///./server/express.js?");
+eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nSyntaxError: Unexpected token (77:4)\\n\\n  75 |   const context = {};\\n  76 |   const markup = ReactDOMServer.renderToString(\\n> 77 |     <StaticRouter location={req.url} context={context}>\\n     |     ^\\n  78 |       <JssProvider\\n  79 |         registry={sheetsRegistry}\\n  80 |         generateClassName={generateClassName}\\n\");\n\n//# sourceURL=webpack:///./server/express.js?");
 
 /***/ }),
 
